@@ -1,0 +1,20 @@
+<p>ng-for works!</p>
+
+<!-- <div *ngFor="let item of cars ; index as i">
+    <div *ngIf="i==1">
+        {{"index is "+i}}  {{item}}
+    </div>
+</div> -->
+
+<!-- <div *ngFor="let item of cars ; index as i ; odd as o ; even as e ; first as f">
+        {{"index is "+i}}  {{item}} - {{"is Odd "+o}} -{{"Is Even "+ e}} - {{"Is first item "+f}}
+</div> -->
+
+<div *ngFor="let person of persons">
+    Id is 
+    <strong [style.color]="'green'">{{person.id}}</strong> 
+    and name is 
+    <strong [style.color]="'red'">{{person.name}}</strong> 
+    and age is 
+    <strong [style.color]="'blue'">{{person.age}}</strong>
+</div>

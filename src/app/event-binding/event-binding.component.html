@@ -1,0 +1,9 @@
+<p>event-binding works!</p>
+<input type="button" value="Greating" (click)="showMessage($event)" />
+
+<br>
+
+Template Reference variable
+
+<input type="text" #textValue />
+<input type="button" (click)="displayValue(textValue.value)" value="Display Value"/>
