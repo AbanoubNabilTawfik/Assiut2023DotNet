@@ -1,0 +1,8 @@
+<p>child works!</p>
+<!-- {{parentData}} -->
+{{messageFromParent}}
+<div *ngFor="let car of cars">
+    {{car}}
+</div>
+
+<button (click)="sendDataToParent()" >Send data to parent</button>

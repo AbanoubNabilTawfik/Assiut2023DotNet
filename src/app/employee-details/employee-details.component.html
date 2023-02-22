@@ -1,0 +1,9 @@
+<p>employee-details works!</p>
+
+<div *ngFor="let employee of employees">
+  {{employee.id}} :- {{employee.name}}
+</div>
+
+{{errorMessage}}
+
+<button (click)="createPost()">Create Post</button>
