@@ -12,5 +12,17 @@
 <!-- <app-ng-for></app-ng-for> -->
 <!-- <app-pipes></app-pipes> -->
 <!-- <app-parent></app-parent> -->
-<app-employee-list></app-employee-list>
-<app-employee-details></app-employee-details>
+<!-- <app-employee-list></app-employee-list>
+<app-employee-details></app-employee-details> -->
+<nav>
+    <a routerLinkActive="active" routerLink="/departments">Departments</a>
+    &nbsp; &nbsp;
+    <a routerLinkActive="active" routerLink="/employees">Employees</a>
+    &nbsp; &nbsp;
+    <a routerLinkActive="active" routerLink="/auth/login">Login</a>
+    &nbsp; &nbsp;
+    <a routerLinkActive="active" routerLink="/auth/register">Register</a>
+    &nbsp; &nbsp;
+    <a routerLinkActive="active" routerLink="/auth/reset-password">Reset Password</a>
+</nav>
+<router-outlet></router-outlet>
