@@ -6,6 +6,7 @@ import { DepartmentOverviewComponent } from './department-overview/department-ov
 import { DepartmentsComponent } from './departments/departments.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TdfComponent } from './tdf/tdf.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/departments',pathMatch:'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
     {path:'overview',component:DepartmentOverviewComponent}
    ]
   },
+  {path:'template-forms',component:TdfComponent},
   {path:'auth',loadChildren:()=>import('./auth/auth.module').then(m=>m.AuthModule)
 },
   {path:'**',component:PageNotFoundComponent}
