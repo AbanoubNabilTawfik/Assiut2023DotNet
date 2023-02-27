@@ -6,6 +6,7 @@ import { DepartmentOverviewComponent } from './department-overview/department-ov
 import { DepartmentsComponent } from './departments/departments.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { TdfComponent } from './tdf/tdf.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
    ]
   },
   {path:'template-forms',component:TdfComponent},
+  {path:'reactive-forms',component:ReactiveFormsComponent},
   {path:'auth',loadChildren:()=>import('./auth/auth.module').then(m=>m.AuthModule)
 },
   {path:'**',component:PageNotFoundComponent}
